@@ -165,5 +165,4 @@ endfunction
 nnoremap H :call MarkWindowSwap()<CR> <C-w>h :call DoWindowSwap()<CR>
 nnoremap J :call MarkWindowSwap()<CR> <C-w>j :call DoWindowSwap()<CR>
 nnoremap K :call MarkWindowSwap()<CR> <C-w>k :call DoWindowSwap()<CR>
-    ResetWinnings();
 nnoremap L :call MarkWindowSwap()<CR> <C-w>l :call DoWindowSwap()<CR>
