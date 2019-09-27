@@ -4,15 +4,21 @@ call plug#begin()
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'junegunn/fzf.vim'
+    Plug 'nathanaelkane/vim-indent-guides'
 
     " Themes
     Plug 'seesleestak/duo-mini'
     Plug 'wallysslima/agua'
     Plug 'CreaturePhil/vim-handmade-hero'
+    Plug 'junegunn/seoul256.vim'
 call plug#end()
 
-colorscheme handmade-hero
-"colorscheme gruvbox
+" seoul256 (dark):
+"   Range:   233 (darkest) ~ 239 (lightest)
+"   Default: 237
+let g:seoul256_background = 234
+colo seoul256
+
 let g:airline_theme='murmur'
 set termguicolors
 
@@ -87,5 +93,6 @@ augroup reloadConfigFile
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END
+
 
 
