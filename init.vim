@@ -10,9 +10,12 @@ call plug#begin()
     "Themes
     Plug 'morhetz/gruvbox'
     Plug 'andreasvc/vim-256noir'
+    Plug 'CreaturePhil/vim-handmade-hero'
+    Plug 'AlessandroYorba/Alduin'
 call plug#end()
 
-colorscheme 256_noir
+colorscheme alduin
+
 let g:airline_theme='murmur'
 
 let mapleader=","
@@ -20,6 +23,8 @@ set number
 set relativenumber
 
 noremap <C-p> :FZF<CR>
+
+noremap <C-f> :Grepper<CR>
 
 let g:fzf_layout = { 'window': { 'width': 0.3, 'height': 0.5, 'highlight': 'Comment', 'border': 'sharp' } }
 
