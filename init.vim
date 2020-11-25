@@ -12,9 +12,11 @@ call plug#begin()
     Plug 'andreasvc/vim-256noir'
     Plug 'CreaturePhil/vim-handmade-hero'
     Plug 'AlessandroYorba/Alduin'
+    Plug 'cocopon/iceberg.vim'
 call plug#end()
 
-colorscheme alduin
+colorscheme iceberg
+let g:alduin_Shout_Fire_Breath = 1
 
 let g:airline_theme='murmur'
 
